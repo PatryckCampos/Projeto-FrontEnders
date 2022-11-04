@@ -1,0 +1,1 @@
+Essas paginas são as paginas referentes ao Home e ao Contato, Por Patryck Campos.

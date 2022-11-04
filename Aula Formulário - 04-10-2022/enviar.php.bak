@@ -1,0 +1,29 @@
+﻿<?php
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$assunto = $_POST['assunto'];
+$mensagem = $_POST['mensagem'];
+ 
+
+$para = 'contato@eletronicaazevedo.com.br';
+$assunto = 'Contatos do site';
+$cabecalho = "MIME-Version: 1.0" . "\r\n".
+             "Content-type: text/html; charset=iso-8859-1" . "\r\n".
+             "From: contato@eletronicaazevedo.com.br" . "\r\n" .
+             "Reply-To: contato@eletronicaazevedo.com.br";
+ 
+$corpoDoEmail = $nome . "<br />";
+$corpoDoEmail .= $email . "<br />";
+$corpoDoEmail .= $assunto . "<br /><br />";
+$corpoDoEmail .= $mensagem;
+ 
+$status = mail($para, $assunto, $corpoDoEmail, $cabecalho);
+ 
+if($status)
+    echo "<script> alert('Formulário enviar com sucesso.'); </script>";
+else
+    echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+ 
+echo "<script> window.location.href = 'contatos.html'; </script>";
+
+?>

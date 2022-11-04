@@ -1,11 +1,7 @@
 body{
     background-image: linear-gradient(to bottom,rgb(89, 0, 255), blue );
     background-repeat: no-repeat;
-    background-size: 100% 800px;
-    background-position-y: 1000;
-    
-
-    
+    background-size: 100% 60em;
 }
 
 main.container{
@@ -30,5 +26,5 @@ main.container{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* altura do rodapé */
+    height: 10.5rem;            /* altura do rodapé */
   }

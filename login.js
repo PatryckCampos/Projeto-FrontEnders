@@ -1,19 +1,22 @@
-function validar(formulario){
+var btn = document.querySelector('#entrar');
+var done
+var doneSenha
+var botaoEmail = btn.addEventListener('click', function validar(){
    // INÍCIO Validação de EMAIL
-    if(formulario.email.value == ''){
-        alert("O campo e-mail é obrigatório.");
-        return false;
-    }
-    if(formulario.email.value.indexOf(('@' && '.'),0)== -1){
-    document.getElementById("error-email").innerHTML = "Email inválido"
+    if(email.value == ''){
+        document.getElementById("error-email").innerHTML = "O email é obrigatório";
+        done = 0
     return false;
-} else{document.getElementById("error-email").innerHTML = ""}
-//FIM EMAIL
-}
+    }
+    else if(email.value.indexOf(('@' && '.'),0)== -1){
+    document.getElementById("error-email").innerHTML = "Email inválido"
+    done = 0;
+} else{document.getElementById("error-email").innerHTML = ""; done = 1}});
+// FIM DO EMAIL
 
 
 // INICIO Validação de SENHA
-var btn = document.querySelector('#entrar');
+
 
 const regexMaiusculo = /[A-Z]/gi;
 
@@ -23,20 +26,27 @@ const regexNumeros = /[0-9]/gi;
 
 const especial = /[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<,(,)]/
 
-    btn.addEventListener('click', function validarSenha(){
+    var botaoSenha = btn.addEventListener('click', function validarSenha(){
         if(senha.value == ''){
            document.getElementById("error-senha").innerHTML = "A senha é obrigatória" 
            return false;
-    }
+           }
     
     if(senha.value.match(regexMaiusculo) && senha.value.match(regexMinusculo) && senha.value.match(regexNumeros) && senha.value.match(especial) && senha.value.length >= 8){
         document.getElementById("error-senha").innerHTML = "";
+        doneSenha = 1;
+        
     
+    }else{document.getElementById("error-senha").innerHTML = "Senha inválida"; doneSenha = 0}
+    });
+   
+    function validarTotal(){
+        if(done == 1 && doneSenha == 1){
+            location.href="home.html";
+            return false;
+        }
     }
-                                //TEXTO DO ERRO
-    else{document.getElementById("error-senha").innerHTML = "Senha inválida"}
-    })
-
+// FIM validação senha
 
 
     //Mostrar senha
@@ -55,12 +65,3 @@ const especial = /[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<,(,)]/
     input.type="password"; 
 }
    });
-   
-
-
-
-
-
-
-
-

@@ -52,13 +52,13 @@
         <form id="formulario">
           <p id="error-email"></p>
           <label for="login">Login:</label>
-            <input type="email" placeholder="E-mail" id="email">
+            <input type="email" placeholder="E-mail" id="email" onkeyup="validar()">
              <br>
              <br>
         <div id="mostrar-senha">
           <p id="error-senha" style="color:crimson"></p>
           <label for="senha">Senha:</label>
-            <input type="password" placeholder="Senha" id="senha">
+            <input type="password" placeholder="Senha" id="senha" onkeyup="validarSenha()">
             <img class="imgSenha" src="imagens/eye.svg">
         </div>
             

@@ -38,7 +38,7 @@ main.container{
 .caixa-login{
   width: 450px;
   text-align: center;
-  height: 520px;
+  height: 540px;
 }
 form#formulario input#email{
   margin-right: 25px;
@@ -73,4 +73,7 @@ div input {
 #mostrar-senha .imgSenha {
   width: 18px;
   cursor: pointer;
+}
+a.cadastro{ 
+  margin-top: 40px;
 }

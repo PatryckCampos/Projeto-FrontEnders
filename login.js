@@ -1,17 +1,19 @@
 var btn = document.querySelector('#entrar');
-var done
-var doneSenha
-var botaoEmail = btn.addEventListener('click', function validar(){
-   // INÍCIO Validação de EMAIL
+var done = 2
+var doneSenha = 2
+function validar(){
     if(email.value == ''){
-        document.getElementById("error-email").innerHTML = "O email é obrigatório";
-        done = 0
+        
+        done = 2
     return false;
     }
     else if(email.value.indexOf(('@' && '.'),0)== -1){
-    document.getElementById("error-email").innerHTML = "Email inválido"
     done = 0;
-} else{document.getElementById("error-email").innerHTML = ""; done = 1}});
+} else{document.getElementById("error-email").innerHTML = ""; done = 1}};
+
+var botaoEmail = btn.addEventListener('click', function validar(){})
+   // INÍCIO Validação de EMAIL
+    
 // FIM DO EMAIL
 
 
@@ -25,27 +27,44 @@ const regexMinusculo = /[a-z]/gi;
 const regexNumeros = /[0-9]/gi;
 
 const especial = /[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<,(,)]/
+function validarSenha(){
+    if(senha.value == ''){
+        document.getElementById("error-senha").innerHTML = "A senha é obrigatória" 
+        doneSenha = 2;
+        return false;
+        }
+ 
+ if(senha.value.match(regexMaiusculo) && senha.value.match(regexMinusculo) && senha.value.match(regexNumeros) && senha.value.match(especial) && senha.value.length >= 8){
+     document.getElementById("error-senha").innerHTML = "";
+     doneSenha = 1;
+     
+ 
+ }else{document.getElementById("error-senha").innerHTML = "Senha inválida"; doneSenha = 0}
+ };
 
-    var botaoSenha = btn.addEventListener('click', function validarSenha(){
-        if(senha.value == ''){
-           document.getElementById("error-senha").innerHTML = "A senha é obrigatória" 
-           return false;
-           }
-    
-    if(senha.value.match(regexMaiusculo) && senha.value.match(regexMinusculo) && senha.value.match(regexNumeros) && senha.value.match(especial) && senha.value.length >= 8){
-        document.getElementById("error-senha").innerHTML = "";
-        doneSenha = 1;
+    var botaoSenha = btn.addEventListener('click', function validarSenha(){})
         
-    
-    }else{document.getElementById("error-senha").innerHTML = "Senha inválida"; doneSenha = 0}
-    });
    
     function validarTotal(){
         if(done == 1 && doneSenha == 1){
+            alert
             location.href="home.html";
             return false;
         }
-    }
+        else if(done == 2){
+            document.getElementById("error-email").innerHTML = "O email é obrigatório" 
+        }
+        else if(doneSenha == 2){
+            document.getElementById("error-email").innerHTML = "A senha é obrigatória"
+        }
+        else if(done == 0){
+            document.getElementById("error-email").innerHTML = "Email inválido"
+        }
+        else if(doneSenha == 0){
+        document.getElementById("error-senha").innerHTML = "Senha inválida";
+        }
+        else {document.getElementById("error-email").innerHTML = "";
+        document.getElementById("error-senha").innerHTML = ""}};
 // FIM validação senha
 
 

@@ -42,7 +42,7 @@
           </div>
         </nav>
     </header>
-
+    
       <main class="container d-flex justify-content-center flex-shrink-0">
         <div class="bg-white caixa-login">
           <h1 class="mt-5 me-4 titulo">Entre na sua conta</h1>
@@ -52,23 +52,23 @@
         <form id="formulario">
           <p id="error-email"></p>
           <label for="login">Login:</label>
-            <input type="email" placeholder="E-mail" id="email" onkeyup="validar()">
+            <input type="email" placeholder="E-mail" id="email" onkeyup="validar();">
              <br>
              <br>
         <div id="mostrar-senha">
           <p id="error-senha" style="color:crimson"></p>
           <label for="senha">Senha:</label>
-            <input type="password" placeholder="Senha" id="senha" onkeyup="validarSenha()">
+            <input type="password" placeholder="Senha" id="senha" onkeyup="validarSenha(); validar()">
             <img class="imgSenha" src="imagens/eye.svg">
         </div>
-            
+            <br>
+            <input type="submit" value="Entrar" id="entrar" onclick="validarTotal(); validar(); validarSenha(); return false">
             <br>
             <br>
             <a class="recuperar-senha" href="recuperarSenha.html" style="text-decoration: none;">Esqueci minha senha</a>
             <br>
             <br>
-            <input type="submit" value="Entrar" id="entrar" onclick="validarTotal(); return false"><br><br>
-            <a class="cadastro" href="cadastro.html" style="text-decoration: none;">Não tem uma conta? Crie uma</a>
+            <a class="cadastro" href="cadastro.html" style="text-decoration: none;">Criar uma conta</a>
         </form>
 
 
@@ -77,12 +77,11 @@
       
       
 
-      <!--<footer class="footer mt-auto py-3 bg-dark" id="footer">
+      <footer class="footer mt-auto py-3 bg-dark" id="footer">
         <div class="container">
           <span class="text-muted">Desenvolvido por Patryck Bruno, Thiago Silva, Gabriel Pekim e Daniel Victor.</span>
         </div>
       </footer>
-    -->
       
 
     

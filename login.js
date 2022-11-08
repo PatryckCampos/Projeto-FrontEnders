@@ -1,13 +1,14 @@
 var btn = document.querySelector('#entrar');
-var done = 2
-var doneSenha = 2
+var done
+var doneSenha
 function validar(){
     if(email.value == ''){
-        
+        document.getElementById("error-email").innerHTML = "O email é obrigatório"
         done = 2
     return false;
     }
     else if(email.value.indexOf(('@' && '.'),0)== -1){
+        document.getElementById("error-email").innerHTML = "Email inválido"
     done = 0;
 } else{document.getElementById("error-email").innerHTML = ""; done = 1}};
 
@@ -27,25 +28,25 @@ const regexMinusculo = /[a-z]/gi;
 const regexNumeros = /[0-9]/gi;
 
 const especial = /[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<,(,)]/
+// VALIDAÇÃO KEYUP
 function validarSenha(){
     if(senha.value == ''){
         document.getElementById("error-senha").innerHTML = "A senha é obrigatória" 
         doneSenha = 2;
-        return false;
+        
         }
  
- if(senha.value.match(regexMaiusculo) && senha.value.match(regexMinusculo) && senha.value.match(regexNumeros) && senha.value.match(especial) && senha.value.length >= 8){
+ else if(senha.value.match(regexMaiusculo) && senha.value.match(regexMinusculo) && senha.value.match(regexNumeros) && senha.value.match(especial) && senha.value.length >= 8){
      document.getElementById("error-senha").innerHTML = "";
      doneSenha = 1;
      
- 
  }else{document.getElementById("error-senha").innerHTML = "Senha inválida"; doneSenha = 0}
- };
+};
 
     var botaoSenha = btn.addEventListener('click', function validarSenha(){})
         
-   
-    function validarTotal(){
+   // VALIDAÇÃO CLICK
+        function validarTotal(){
         if(done == 1 && doneSenha == 1){
             alert
             location.href="home.html";
@@ -55,7 +56,7 @@ function validarSenha(){
             document.getElementById("error-email").innerHTML = "O email é obrigatório" 
         }
         else if(doneSenha == 2){
-            document.getElementById("error-email").innerHTML = "A senha é obrigatória"
+            document.getElementById("error-senha").innerHTML = "A senha é obrigatória"
         }
         else if(done == 0){
             document.getElementById("error-email").innerHTML = "Email inválido"

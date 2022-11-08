@@ -35,14 +35,16 @@ main.container{
   padding-left: 45px;
   font-size: 30px;
 }
+/*formatação da caixa*/
 .caixa-login{
   width: 450px;
   text-align: center;
   height: 530px;
   margin-top: 60px;
+  border-radius: 10px;
 }
 form#formulario input#email{
-  margin-right: 25px;
+  margin-right: 20px;
 }
 input#entrar{
   margin-left: 25px;
@@ -70,7 +72,7 @@ input:focus{
   margin-bottom: 15px;
 }
 /*importante*/
-
+/* formatação dos botões*/
 div input {
   border: none;
   border-bottom: 2px solid rgb(89, 0, 255);

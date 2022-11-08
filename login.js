@@ -48,7 +48,7 @@ function validarSenha(){
    // VALIDAÇÃO CLICK
         function validarTotal(){
         if(done == 1 && doneSenha == 1){
-            alert
+            alert('Você está logado.')
             location.href="home.html";
             return false;
         }
@@ -66,7 +66,7 @@ function validarSenha(){
         }
         else {document.getElementById("error-email").innerHTML = "";
         document.getElementById("error-senha").innerHTML = ""}};
-// FIM validação senha
+// FIM validação senha e email
 
 
     //Mostrar senha

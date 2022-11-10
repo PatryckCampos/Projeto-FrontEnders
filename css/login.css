@@ -1,0 +1,115 @@
+main.container {
+  padding-top: 60px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* altura do rodapé */
+}
+
+.titulo {
+  padding-top: 35px;
+  padding-left: 60px;
+  font-size: 30px;
+  font-family: 'Kozuka', sans-serif;
+  font-weight: bold;
+}
+
+form#formulario label {
+  font-family: 'LetterGothicStd', sans-serif;
+  font-weight: normal;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Kozuka';
+  src: url("../fonts/kozuka.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LetterGothicStd';
+  src: url("../fonts/LetterGothicStd.otf") format("opentype");
+}
+
+/*formatação da caixa*/
+.caixa-login {
+  width: 420px;
+  text-align: center;
+  height: 480px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+form#formulario input#email {
+  margin-right: 20px;
+}
+
+input#entrar {
+  margin-left: 37px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 250px;
+}
+
+input#email:invalid {
+  border-color: crimson;
+  box-shadow: 0px 0px 3px crimson;
+}
+
+input#senha:invalid {
+  border-color: crimson;
+  box-shadow: 0px 0px 3px crimson;
+}
+
+input:focus {
+  outline: none;
+}
+
+#error-email {
+  color: crimson;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+}
+
+/*importante*/
+/* formatação dos botões*/
+div input {
+  border: none;
+  border-bottom: 2px solid rgb(89, 0, 255);
+}
+
+input[type=submit]:hover {
+  background-color: rgb(255, 201, 14);
+  border-bottom: 2px solid rgb(65, 0, 187);
+  color: black;
+  font-weight: bold;
+}
+
+#mostrar-senha .imgSenha {
+  width: 18px;
+  cursor: pointer;
+}
+
+.recuperar-senha {
+  padding-left: 33px;
+}
+
+.cadastro {
+  padding-left: 33px;
+}

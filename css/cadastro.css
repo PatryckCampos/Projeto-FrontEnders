@@ -1,0 +1,96 @@
+ .bd-placeholder-img {
+   font-size: 1.125rem;
+   text-anchor: middle;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+ }
+
+ /* altura do rodapé */
+ .titulo {
+   padding-top: 20px;
+   padding-left: 45px;
+   font-size: 30px;
+ }
+
+ /*formatação da caixa*/
+ .caixa-login {
+   width: 450px;
+   text-align: center;
+   height: 680px;
+   margin-top: 40px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+ }
+
+ form#formulario input#email {
+   margin-right: 20px;
+ }
+
+ input#entrar {
+   margin-left: 25px;
+   margin-bottom: 10px;
+ }
+
+ input#nome {
+   margin-right: 20px;
+ }
+
+ input {
+   width: 250px;
+
+ }
+
+ form#formulario {
+   margin-bottom: 0px;
+   padding-bottom: 5px;
+ }
+
+ .rg-estado input {
+   width: 250px;
+   text-align: center;
+   margin-left: 30px;
+
+ }
+
+
+ input#email:invalid {
+   border-color: crimson;
+   box-shadow: 0px 0px 3px crimson;
+ }
+
+ input#senha:invalid {
+   border-color: crimson;
+   box-shadow: 0px 0px 3px crimson;
+ }
+
+ input:focus {
+   outline: none;
+ }
+
+ #error-email {
+   color: crimson;
+   padding-top: 5px;
+
+ }
+
+ /*importante*/
+ /* formatação dos botões*/
+ div input {
+   border: none;
+   border-bottom: 2px solid rgb(89, 0, 255);
+ }
+
+ #mostrar-senha .imgSenha {
+   width: 18px;
+   cursor: pointer;
+ }
+ @font-face {
+  font-family: 'Kozuka';
+  src: url("../fonts/kozuka.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LetterGothicStd';
+  src: url("../fonts/LetterGothicStd.otf") format("opentype");
+}

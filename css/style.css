@@ -1,0 +1,47 @@
+body {
+  background-image: linear-gradient(to bottom, rgb(21, 111, 229), rgb(138, 164, 198));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.rodape {
+  background-image: linear-gradient(to bottom, rgb(95, 144, 211), rgb(255, 255, 255));
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Kozuka';
+  src: url("../fonts/kozuka.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LetterGothicStd';
+  src: url("../fonts/LetterGothicStd.otf") format("opentype");
+}
+
+/* --- */
+
+section#rodape a {
+  text-decoration: none;
+  color: rgb(60,60,60);
+
+}
+
+.navbar-custom {
+  background-color: rgb(9,22,47);
+}
+
+.fonte{
+  font-family: 'Kanit', sans-serif;
+}

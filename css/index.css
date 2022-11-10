@@ -1,0 +1,143 @@
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BOTÃO DA NET */
+
+.button {
+  border-radius: 4px;
+  background-color: #FFC90E;
+  border: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 5px;
+  width: 370px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 0px 5px 5px 50px;
+  box-shadow: 0 9px #999;
+  text-shadow: 1px 1px black;
+  border-radius: 15px;
+}
+
+.button:hover{
+  background-color: #f5c30d;
+}
+
+.button:active {
+  background-color: #f5c30d;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* BOTÃO2 DA NET */
+
+.button2 {
+  border-radius: 4px;
+  background-color: #cecece;
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  width: 200px;
+  transition: all 0.1s;
+  cursor: pointer;
+  box-shadow: 0 9px rgb(68, 68, 68);
+  border-radius: 15px;
+}
+
+.button2:hover{
+  background-color: #89f50d;
+}
+
+.button2:active {
+  background-color: #89f50d;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Divs */
+
+.cartfy {
+  font-family: 'Kozuka';
+  font-size: 35px;
+  padding: 10px 0px;
+  color: white;
+  text-shadow: 2px 2px rgb(36, 36, 36);
+}
+
+.card-body {
+  margin: 40px;
+}
+
+.custom {
+  margin-left: 150px;
+  margin-top: 50px;
+  background-color: rgb(9,22,47);
+}
+
+.custom2 {
+  margin-left: 150px;
+  margin-top: 0px;
+  background-color: rgb(9,22,47);
+}
+
+.suporte {
+  margin-top: 0px;
+  background-color: rgb(9,22,47);
+}
+

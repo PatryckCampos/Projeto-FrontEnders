@@ -71,11 +71,11 @@ var done;
 var doneSenha;
 var doneConfirmacao;
 var doneNome;
-const regexMaiusculo = /[A-Z]/gi;
+const regexMaiusculo = /[A-Z]/;
 
-const regexMinusculo = /[a-z]/gi;
+const regexMinusculo = /[a-z]/;
 
-const regexNumeros = /[0-9]/gi;
+const regexNumeros = /[0-9]/;
 
 const especial = /[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<,(,)]/
 
@@ -93,7 +93,7 @@ else if(nome.value.length < 3) {
     return false;
 }
 else if(nome.value[0].match(regexMinusculo)) {
-    document.getElementById("error-nome").innerHTML = "Comece com a letra minúscula.";
+    document.getElementById("error-nome").innerHTML = "Comece com a letra maiúscula."
     doneNome = 0;
     return false;
 }
@@ -158,8 +158,8 @@ doneConfirmacao = 1;}
    // VALIDAÇÃO CLICK
         function validarTotal(){
         if(done == 1 && doneSenha == 1 && doneNome == 1){
-            alert('Você está logado.')
-            location.href="home.html";
+            alert('Você está cadastrado.')
+            location.href="index.html";
             return false;
         }
         else if(done == 2){

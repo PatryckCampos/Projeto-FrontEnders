@@ -17,6 +17,14 @@
     <!-- custom css-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/servico.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fonte-->
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Cookie&family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -64,14 +72,41 @@
 
     <!-- ==================CONTEÚDO======================= -->
     <main>
-        <div class="container align-items-center text-center">
-            <h1 class="mt-5">Cartfy é uma poderosa API de carrinhos de vendas para lojas virtuais que querem se
+        <div class="container align-items-center text-center ">
+            <h1 class="mt-5 h1-titulo">Cartfy é uma poderosa API de carrinhos de vendas para lojas virtuais que querem se
                 destacar.</h1>
             <p class="lead">Deixe o seu cart com a cara da sua loja sem nenhum código de programação: além de milhares
                 de modelos para escolher, cada elemeneto do carrinho é customizável. E o melhor: atendimento ao cliente
                 24h por dia através do nosso chat online. Qualquer dúvida, chama que a gente resolve! </p>
-            <input type="submit" value="CONHEÇA NOSSOS PLANOS"></input>
+            <a><input type="submit" class="button" value="CONHEÇA NOSSOS PLANOS"></input></a>
+
+            <div class="row planos justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <ul class="list-group col plano plano1 mt-2 mb-2">
+                        <li class="list-group-item list-title">STANDARD</li>
+                        <li class="list-group-item list-item-left">24h de suporte ao cliente através do nosso atendimento por chat</li>
+                        <li class="list-group-item list-item-left">Até 2000 templates de carts customizáveis</li>
+                        <li class="list-group-item list-item-left list-item-1">Consultoria VIP com equipe de WEB Designers</li>
+                        <li class="list-group-item list-item-left list-item-2"><span>R$ 19,90/MÊS</span><br><strong>R$ 12,90/MÊS</strong></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="col d-flex justify-content-center">
+                    
+                    <ul class="list-group plano plano2 mt-2 mb-2">
+                        <li class="list-group-item list-title2">PREMIUM</li>
+                        <li class="list-group-item list-item-right">24h de suporte ao cliente através do nosso atendimento por chat</li>
+                        <li class="list-group-item list-item-right">Mais de <strong>10000</strong> templates de carts customizáveis (novos templates toda semana) </li>
+                        <li class="list-group-item list-item-right"><strong>Consultoria VIP</strong> com equipe de WEB Designers</li>
+                        <li class="list-group-item list-item-right list-item-3"><span>R$ 34,90/MÊS</span><br><strong>R$ 19,90/MÊS</strong></li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
+
+        
     </main>
     <!-- ================FIM CONTEÚDO===================== -->
 
@@ -137,7 +172,7 @@
     </footer>
 
     <!--FIM RODAPÉ-->
-
+<script src="servico.js"></script>
 </body>
 
 </html>

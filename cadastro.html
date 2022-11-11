@@ -33,8 +33,8 @@
 
             <div class="container navbar-custom">
 
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand " href="index.html"><img src="imagens/logo.png" width="40" height="30" /></a>
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" width="40" height="30" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -77,17 +77,17 @@
             <form id="formulario">
                 <p id="error-nome" style="color:crimson"></p>
                 <label for="login">Nome:</label>
-                <input type="text" placeholder="Nome" id="nome" onkeyup="validarNome()">
+                <input type="text" placeholder="Nome completo" id="nome" onkeyup="validarNome()">
 
                 <p id="error-email" style="padding-top: 4"></p>
                 <label for="login">E-mail:</label>
-                <input type="email" placeholder="E-mail" id="email" onkeyup="validar();">
+                <input type="email" placeholder="Insira seu e-mail" id="email" onkeyup="validar();">
                 <br>
                 <br>
                 <div id="mostrar-senha">
                     <p id="error-senha" style="color:crimson; margin-bottom: 5px;"></p>
                     <label for="senha">Senha:</label>
-                    <input type="password" placeholder="Senha" id="senha" onkeyup="validarSenha()">
+                    <input type="password" placeholder="Insira nova senha" id="senha" onkeyup="validarSenha()">
                     <img class="imgSenha" src="imagens/eye.svg">
                 </div>
 
@@ -95,7 +95,7 @@
                 <p id="error-senha2" style="color:crimson; margin-bottom: 5px;"></p>
                 <div id="mostrar-senha-dnv">
                     <label for="senha">Confirmar:</label>
-                    <input type="password" placeholder="Senha" id="confirmarSenha" onkeyup="validarConfirmacao()"
+                    <input type="password" placeholder="Confirme nova senha" id="confirmarSenha" onkeyup="validarConfirmacao()"
                         class="me-5" onkeyup="validarSenha(); validar()">
                 </div>
 

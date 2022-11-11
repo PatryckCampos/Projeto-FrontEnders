@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- custom css-->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/contato2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap%27');
+    </style>
 </head>
 
 <header>
@@ -63,6 +67,7 @@
     <!-- FIM NAVBAR-->
 
     <body>
+        
 
         <!-- ==================CONTEÚDO======================= -->
 
@@ -78,108 +83,120 @@
             <div class="row justify-content-center mt-5 mb-5" style="width: 100%;">
                 <div class="col-md-auto mb-3">
                     <div class="card bg-transparent border-0 align-items-center" style="width: 18rem;">
-                        <img src="imagens/img (4).png" class="card-img-top" alt="...">
+                        <a href="#window1" class="abrir-modal1">
+                        <img src="imagens/img (4).png" class="card-img-top foto" alt="..."></a>
                         <h2>Thiago Silva</h2>
                         <h3>CEO da FrontEnders</h3>
-                        <div class="card-body">
-                            <div class="social">
-                                <!--no local da # colocar o link do github de cada um-->
-                                <a href="https://github.com/thsilvadev" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg></a>
-                                <a href="https://www.linkedin.com/in/thiagosauro/" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                                        </path>
-                                    </svg></a>
-                            </div>
+                        <div class="social">
+                            <!--no local da # colocar o link do github de cada um-->
+                            <a href="https://github.com/thsilvadev" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/thiagosauro/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="card-body window1" id="window1">
+                            <p>Dono de uma Empresa em ascensão Thiago Silva, com 26 anos, CEO da empresa FrontEnders vem trazendo a tona projetos ousados e desafiadores ao público, chefiando produtos que são febre entre os Programadores - tanto os de primeira viagem quanto os que já estão no ramo a bastante tempo.</p>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-auto mb-3">
                     <div class="card bg-transparent border-0 align-items-center" style="width: 18rem;">
-                        <img src="imagens/img (3).png" class="card-img-top" alt="...">
+                        <a href="#window2" class="abrir-modal2">
+                        <img src="imagens/img (3).png" class="card-img-top foto" alt="..."></a>
                         <h2>Gabriel Pekim</h2>
-                        <h3>Gerente de Marketing e Design</h3>
-                        <div class="card-body">
-                            <div class="social">
-                                <!--no local da # colocar o link do github de cada um-->
-                                <a href="https://github.com/pekim2" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg></a>
-                                <a href="https://www.linkedin.com/in/gabrielpekim/" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                                        </path>
-                                    </svg></a>
-                            </div>
+                        <h3>Marketing digital e Dev-Web </h3>
+                        <div class="social">
+                            <!--no local da # colocar o link do github de cada um-->
+                            <a href="https://github.com/pekim2" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/gabrielpekim/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="card-body window2" id="window2">
+                            <p>Na área de Marketing Digital temos como representante do nosso time Gabriel Pekim, que apesar de ser um novato tem se mostrado promissor desde sua chegada na empresa, sendo a cara da nova geraçã. Formado em Desenvolvimento Web, ele trabalha com ideias inovadoras e chamativas.</p>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-auto mb-3">
                     <div class="card bg-transparent border-0 align-items-center" style="width: 18rem;">
-                        <img src="imagens/img (2).png" class="card-img-top" alt="..." id="imagem">
+                        <a href="#window3" class="abrir-modal3">
+                        <img src="imagens/img (2).png" class="card-img-top foto" alt="..." id="imagem"></a>
                         <h2>Patryck Campos</h2>
                         <h3>Desenvolvedor da API</h3>
-                        <div class="card-body">
-                            <div class="social">
-                                <!--no local da # colocar o link do github de cada um-->
-                                <a href="https://github.com/PatryckCampos" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg></a>
-                                <a href="https://www.linkedin.com/in/patryckcampos/" target="_blank"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                                        </path>
-                                    </svg></a>
-                            </div>
+                        <div class="social">
+                            <!--no local da # colocar o link do github de cada um-->
+                            <a href="https://github.com/PatryckCampos" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/patryckcampos/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="card-body window3" id="window3">
+                            <p>Trabalhando para a FrontEnders, Patryck Campos, com apenas 18 anos, está chefiando o desenvolvimento da API Cartfy, de maneira dinâmica e otimizada, deixando o aplicativo cada vez mais intuitivo e funcional.</p>
+                            
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-auto mb-3">
                     <div class="card bg-transparent border-0 align-items-center" style="width: 18rem;">
-                        <img src="imagens/img.png" class="card-img-top" alt="...">
+                        <a href="#window4" class="abrir-modal4">
+                        <img src="imagens/img.png"href="#" class="card-img-top foto" alt="..."></a>
                         <h2>Daniel Victor</h2>
                         <h3>QA e Segurança WEB</h3>
-                        <div class="card-body">
+                        
+                        <div class="social">
+                            <a href="https://github.com/ZarielGod" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/daniel-victor-070486252/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="card-body window4" id="window4">
+                            <p>Nosso Quality Assurance. O jovem de 20 anos que atua há pouco mais de 2 anos como QA e é apaixonado por sua profissão de "Provar, Testar e Validar" a qualidade e eficiência dos mais diversos softwares, garantindo uma experiência única no projeto. Também atua como Diretor de Segurança Web.</p>
+                        
 
-                            <div class="social">
-                                <a href="https://github.com/ZarielGod" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg></a>
-                                <a href="https://www.linkedin.com/in/daniel-victor-070486252/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                                        </path>
-                                    </svg></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +204,9 @@
         </main>
 
         <!-- ================FIM CONTEÚDO===================== -->
-
+        
+        <script src="jquery-3.6.1.js" type="text/javascript"></script>
+        <script src="contato.js" type="text/javascript"></script>
     </body>
 
     <!-- RODAPÉ -->
@@ -250,5 +269,4 @@
     </footer>
 
     <!--FIM RODAPÉ-->
-
 </html>

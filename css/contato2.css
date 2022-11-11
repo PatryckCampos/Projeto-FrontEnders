@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+  .social {
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+
+.pessoas {
+  height: 376px;
+  width: 800px;
+  display: inline-block;
+}
+h2{
+  color: white;
+}
+h3{
+  color: white;
+}
+
+.texto {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Kozuka';
+  padding-top: 50px;
+  color: white;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Kozuka';
+  src: url("../fonts/kozuka.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LetterGothicStd';
+  src: url("../fonts/LetterGothicStd.otf") format("opentype");
+}
+
+.card {
+  box-shadow: 10px;
+}
+
+.foto{
+  width: 250px;
+  margin-bottom: 10px;
+  
+}
+.foto:hover{
+  border-radius: 50%;
+  width: 300px;
+  border: 10px solid white;
+  
+  
+}
+
+h3 {
+  font-size: 20px;
+}
+/*TEXTOS DAS FOTOS*/
+.window1{background-color: white; border-radius: 10px; margin-top: 10px;}
+.window1 p{
+  width: 300px;
+ }
+ .window2{background-color: white; border-radius: 10px; margin-top: 10px;}
+.window2 p{
+  width: 300px;
+}
+.window3{background-color: white; border-radius: 10px; margin-top: 10px;}
+.window3 p{
+  width: 300px;
+}
+.window4{background-color: white; border-radius: 10px; margin-top: 10px;}
+.window4 p{
+  width: 300px;
+}
+
+.card-body p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -48,7 +48,7 @@ form#formulario label {
 .caixa-login {
   width: 420px;
   text-align: center;
-  height: 480px;
+  min-height: 480px;
   margin-top: 0px;
   margin-bottom: 30px;
   border-radius: 10px;

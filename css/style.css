@@ -45,3 +45,7 @@ section#rodape a {
 .fonte{
   font-family: 'Kanit', sans-serif;
 }
+
+html.textomaior{
+  font-size: 150%;
+}

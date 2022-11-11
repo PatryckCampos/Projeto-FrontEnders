@@ -17,12 +17,12 @@
 
  /*formatação da caixa*/
  .caixa-login {
-   width: 450px;
+   min-width: 450px;
    text-align: center;
-   height: 680px;
-   margin-top: 40px;
+   min-height: 680px;
+   margin: 40px 0 20px 0;
    border-radius: 20px;
-   margin-bottom: 20px;
+  
  }
 
  form#formulario input#email {
@@ -44,8 +44,7 @@
  }
 
  form#formulario {
-   margin-bottom: 0px;
-   padding-bottom: 5px;
+   padding: 0px 0px 5px 15px;
  }
 
  .rg-estado input {
